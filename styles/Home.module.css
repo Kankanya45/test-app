@@ -5,6 +5,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: #FCE4EC; /* สีชมพู */
 }
 
 .description {
@@ -47,11 +48,12 @@
 }
 
 .card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
+  padding: 1.5rem; /* ปรับระยะห่าง */
+  border-radius: 1rem; /* ปรับความโค้งของมุม */
+  background-color: #FFF; /* สีพื้นหลังของ card */
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  
 }
 
 .card span {
@@ -61,11 +63,13 @@
 
 .card h2 {
   font-weight: 600;
+  color: #C2185B; /* สีข้อความหัวเรื่อง */
   margin-bottom: 0.7rem;
 }
 
 .card p {
   margin: 0;
+  color: #888; /* สีข้อความคำอธิบาย */
   opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
@@ -107,11 +111,12 @@
 .logo {
   position: relative;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    background-color: #F8BBD0; /* สีชมพูเมื่อ hover */
+    border-color: #F8BBD0; /* สีขอบของ card เมื่อ hover */
   }
 
   .card:hover span {
@@ -227,3 +232,9 @@
     transform: rotate(0deg);
   }
 }
+.center h6 {
+  font-size: 10rem; /* ขนาดตัวหนังสือ */
+  font-weight: bold; /* น้ำหนักตัวหนังสือ */
+  color: #C2185B; /* สีข้อความ */
+}
+
